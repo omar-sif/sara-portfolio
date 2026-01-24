@@ -22,13 +22,15 @@ import GoBack from '../components/GoBack.jsx';
 
   <!-- Projects Grid -->
   <section class="py-20 bg-background-light dark:bg-background-dark">
-    <div class="max-w-7xl mx-auto px-6 space-y-24">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 font-general">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Mobile: single column, Tablet: 2 cols, Desktop: 10-column staggered grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-10 gap-8 lg:gap-y-16 font-general">
         
-        <!-- Casa Orla -->
-        <a href="/casaorla" class="flex justify-center group animate-on-scroll">
-          <div class="aspect-[233/220] w-full max-w-[300px]">
-            <div class="overflow-hidden">
+        <!-- Row 1: starts at col 1, 4, 7 -->
+        <!-- Casa Orla - col 1 -->
+        <a href="/casaorla" class="group animate-on-scroll lg:col-start-1 lg:col-span-2">
+          <div class="aspect-[233/220] w-full">
+            <div class="overflow-hidden h-full">
               <img 
                 src="/assets/casaorla_green.svg" 
                 alt="Casa Orla branding project"
@@ -36,14 +38,14 @@ import GoBack from '../components/GoBack.jsx';
                 loading="lazy"
               />
             </div>
-            <p class="mt-4 text-center group-hover:text-primary transition-colors">CASA ORLA</p>
           </div>
+          <p class="mt-4 text-center group-hover:text-primary transition-colors">CASA ORLA</p>
         </a>
 
-        <!-- 2030 World Cup -->
-        <a href="/worldcup" class="flex justify-center group animate-on-scroll" style="animation-delay: 0.1s;">
-          <div class="aspect-[233/220] w-full max-w-[300px]">
-            <div class="overflow-hidden">
+        <!-- 2030 World Cup - col 4 -->
+        <a href="/worldcup" class="group animate-on-scroll lg:col-start-4 lg:col-span-2" style="animation-delay: 0.1s;">
+          <div class="aspect-[233/220] w-full">
+            <div class="overflow-hidden h-full">
               <img 
                 src="/assets/enmvt_link.png" 
                 alt="2030 World Cup branding project"
@@ -51,14 +53,14 @@ import GoBack from '../components/GoBack.jsx';
                 loading="lazy"
               />
             </div>
-            <p class="mt-4 text-center group-hover:text-primary transition-colors">2030 World Cup</p>
           </div>
+          <p class="mt-4 text-center group-hover:text-primary transition-colors">2030 World Cup</p>
         </a>
 
-        <!-- PIATO -->
-        <a href="/piato" class="flex justify-center group animate-on-scroll" style="animation-delay: 0.2s;">
-          <div class="aspect-[233/220] w-full max-w-[300px]">
-            <div class="overflow-hidden">
+        <!-- PIATO - col 7 -->
+        <a href="/piato" class="group animate-on-scroll lg:col-start-7 lg:col-span-2" style="animation-delay: 0.2s;">
+          <div class="aspect-[233/220] w-full">
+            <div class="overflow-hidden h-full">
               <img 
                 src="/assets/piato_menu.png" 
                 alt="PIATO Restaurant branding"
@@ -66,14 +68,15 @@ import GoBack from '../components/GoBack.jsx';
                 loading="lazy"
               />
             </div>
-            <p class="mt-4 text-center group-hover:text-primary transition-colors">PIATO - Restaurant</p>
           </div>
+          <p class="mt-4 text-center group-hover:text-primary transition-colors">PIATO - Restaurant</p>
         </a>
 
-        <!-- Book Festival -->
-        <a href="/book-fest" class="flex justify-center group animate-on-scroll" style="animation-delay: 0.3s;">
-          <div class="aspect-[233/220] w-full max-w-[300px] sm:translate-x-1/4 lg:translate-x-1/2">
-            <div class="overflow-hidden">
+        <!-- Row 2: starts at col 3, 6, 9 -->
+        <!-- Book Festival - col 3 -->
+        <a href="/book-fest" class="group animate-on-scroll lg:col-start-3 lg:col-span-2" style="animation-delay: 0.3s;">
+          <div class="aspect-[233/220] w-full">
+            <div class="overflow-hidden h-full">
               <img 
                 src="/assets/book_festival.png" 
                 alt="Book Festival branding project"
@@ -81,14 +84,14 @@ import GoBack from '../components/GoBack.jsx';
                 loading="lazy"
               />
             </div>
-            <p class="mt-4 text-center group-hover:text-primary transition-colors">Book Festival</p>
           </div>
+          <p class="mt-4 text-center group-hover:text-primary transition-colors">Book Festival</p>
         </a>
 
-        <!-- Chocolate -->
-        <a href="/chocolate" class="flex justify-center group animate-on-scroll" style="animation-delay: 0.4s;">
-          <div class="aspect-[233/220] w-full max-w-[300px] sm:translate-x-1/4 lg:translate-x-1/2">
-            <div class="overflow-hidden">
+        <!-- Chocolate - col 6 -->
+        <a href="/chocolate" class="group animate-on-scroll lg:col-start-6 lg:col-span-2" style="animation-delay: 0.4s;">
+          <div class="aspect-[233/220] w-full">
+            <div class="overflow-hidden h-full">
               <img 
                 src="/assets/sweet siblings PNG.png" 
                 alt="Chocolate branding project"
@@ -96,14 +99,14 @@ import GoBack from '../components/GoBack.jsx';
                 loading="lazy"
               />
             </div>
-            <p class="mt-4 text-center group-hover:text-primary transition-colors">Chocolate</p>
           </div>
+          <p class="mt-4 text-center group-hover:text-primary transition-colors">Chocolate</p>
         </a>
 
-        <!-- Book Store -->
-        <a href="/book-store" class="flex justify-center group animate-on-scroll" style="animation-delay: 0.5s;">
-          <div class="aspect-[233/220] w-full max-w-[300px] sm:translate-x-1/4 lg:translate-x-1/2">
-            <div class="overflow-hidden">
+        <!-- Book Store - col 9 -->
+        <a href="/book-store" class="group animate-on-scroll lg:col-start-9 lg:col-span-2" style="animation-delay: 0.5s;">
+          <div class="aspect-[233/220] w-full">
+            <div class="overflow-hidden h-full">
               <img 
                 src="/assets/tbk web.png" 
                 alt="Book Store branding project"
@@ -111,8 +114,8 @@ import GoBack from '../components/GoBack.jsx';
                 loading="lazy"
               />
             </div>
-            <p class="mt-4 text-center group-hover:text-primary transition-colors">Book Store</p>
           </div>
+          <p class="mt-4 text-center group-hover:text-primary transition-colors">Book Store</p>
         </a>
 
       </div>

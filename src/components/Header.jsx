@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,7 +34,7 @@ export default function Header() {
         {/* Logo */}
         <motion.a
           href="/"
-          className="font-bold text-lg tracking-tighter uppercase text-black dark:text-white hover:opacity-70 transition-opacity"
+          className="font-bold font-clash text-lg tracking-tight uppercase text-black dark:text-white hover:opacity-70 transition-opacity"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
@@ -47,7 +47,7 @@ export default function Header() {
             <motion.a
               key={link.href}
               href={link.href}
-              className="text-black dark:text-white hover:text-primary transition-colors relative group"
+              className="text-black dark:text-white hover:transition-colors relative group"
               whileHover={{ y: -2 }}
               transition={{ duration: 0.2 }}
             >

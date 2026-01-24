@@ -5,8 +5,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout title="Sara El Aam - Graphic Designer">
   <!-- Hero Section -->
   <section class="relative bg-black section-shadow z-40 h-[calc(100vh-64px)] overflow-hidden">
-    <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center relative">
-      <div class="relative animate-on-scroll">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+      <div class="relative w-full">
         <h1 class="relative w-full font-clash font-light text-primary-dark leading-none z-50">
           <div class="w-full text-left animate-on-scroll" style="font-size: clamp(2rem, 8vw, 130px); animation-delay: 0.1s;">
             HELLO, I'M
@@ -19,9 +19,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <!-- Image Cards -->
         <div class="relative h-[30vh] sm:h-[35vh] md:h-[40vh] mt-[1vh]">
           <!-- LEFT CARD -->
-          <div class="absolute top-1/2 left-1/2 -translate-x-[110%] -translate-y-[45%] -rotate-6 w-[18vw] sm:w-[16vw] md:w-[14vw] max-w-[200px] min-w-[90px] z-10 animate-on-scroll hover:scale-105 transition-transform duration-500" style="animation-delay: 0.3s;">
+          <div class="absolute top-1/2 left-1/2 -translate-x-[110%] -translate-y-[45%] -rotate-6 w-[18vw] sm:w-[16vw] md:w-[14vw] max-w-[200px] min-w-[90px] z-10 hover:scale-105 transition-transform duration-500">
             <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/35c22ff331f06a30a6b0cd7c5eceab89057c9854?width=461"
+              src="/assets/left_card.png"
               class="w-full h-auto rounded-lg shadow-2xl" 
               alt="Portfolio work 1"
               loading="lazy"
@@ -29,9 +29,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
 
           <!-- CENTER CARD -->
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[65%] rotate-1 w-[20vw] sm:w-[18vw] md:w-[15vw] max-w-[210px] min-w-[100px] z-20 animate-on-scroll hover:scale-105 transition-transform duration-500" style="animation-delay: 0.4s;">
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[65%] rotate-1 w-[20vw] sm:w-[18vw] md:w-[15vw] max-w-[210px] min-w-[100px] z-20 hover:scale-105 transition-transform duration-500">
             <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/1920fe526e2d5abea30f46cbadf76baaa70e220b?width=466"
+              src="/assets/top_card.png"
               class="w-full h-auto rounded-lg shadow-2xl" 
               alt="Portfolio work 2"
               loading="lazy"
@@ -39,9 +39,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
 
           <!-- RIGHT CARD -->
-          <div class="absolute top-1/2 left-1/2 translate-x-[30%] -translate-y-[45%] rotate-6 w-[18vw] sm:w-[16vw] md:w-[14vw] max-w-[200px] min-w-[90px] z-10 animate-on-scroll hover:scale-105 transition-transform duration-500" style="animation-delay: 0.5s;">
+          <div class="absolute top-1/2 left-1/2 translate-x-[30%] -translate-y-[45%] rotate-6 w-[18vw] sm:w-[16vw] md:w-[14vw] max-w-[200px] min-w-[90px] z-10 hover:scale-105 transition-transform duration-500">
             <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/58c5bdbcd3d2cd3165ee47ffd9ae52b08ea60eb4?width=459"
+              src="/assets/right_card.png"
               class="w-full h-auto rounded-lg shadow-2xl" 
               alt="Portfolio work 3"
               loading="lazy"
@@ -49,16 +49,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Bottom Info -->
-      <div class="absolute bottom-[3vh] sm:bottom-[4vh] left-4 right-4 sm:left-6 sm:right-6 lg:left-8 lg:right-8 flex justify-between items-end">
-        <p class="text-white font-display text-xs sm:text-sm md:text-base opacity-90 animate-on-scroll" style="animation-delay: 0.6s;">
-          graphic designer
-        </p>
-        <p class="text-white font-display text-xs sm:text-sm md:text-base opacity-90 animate-on-scroll" style="animation-delay: 0.7s;">
-          SINCE 2023
-        </p>
-      </div>
+    <!-- Bottom Info -->
+    <div class="absolute bottom-[3vh] sm:bottom-[4vh] left-4 right-4 sm:left-6 sm:right-6 lg:left-8 lg:right-8 flex justify-between items-end">
+      <p class="text-white font-clash text-xs sm:text-sm md:text-base opacity-90 animate-on-scroll" style="animation-delay: 0.6s;">
+        graphic designer
+      </p>
+      <p class="text-white font-clash text-xs sm:text-sm md:text-base opacity-90 animate-on-scroll" style="animation-delay: 0.7s;">
+        SINCE 2023
+      </p>
     </div>
   </section>
 
