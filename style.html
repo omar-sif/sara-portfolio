@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>En mode </title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@1&display=swap">
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@1&display=swap">
+
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#E4201F", // The vibrant red from the palette
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#0A0A0A",
+                        "wc-yellow": "#F7E934",
+                        "wc-teal": "#073B44",
+                        "wc-offwhite": "#F5F5F5",
+                    },
+                    fontFamily: {
+                        display: ["Space Grotesk", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        general: ["General Sans", "sans-serif"],
+                        clash: ["Clash Display", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                    },
+                },
+            },
+
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 selection:bg-primary selection:text-white">
+    <nav
+        class="fixed top-0 w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm border-b border-gray-100 dark:border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-bold text-lg tracking-tighter uppercase">SARA EL AAM</div>
+            <div class="flex gap-8 text-sm font-medium tracking-wide uppercase">
+                <a class="hover:text-primary transition-colors" href="#">About Me</a>
+                <a class="hover:text-primary transition-colors" href="#">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <section
+        class="relative bg-black pt-24 pb-20 sm:pt-32 shadow-[--7px_14px_16.2px_rgba(0,0,0,0.25)] text-white overflow-hidden">
+        <!-- CENTERED HERO BOX -->
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-center items-center">
+                <div class="relative">
+                    <!-- Use flex and gap to create consistent separation -->
+                    <h1
+                        class="font-clash font-medium leading-[0.9] tracking-normal text-7xl flex items-center gap-32 xl:text-9xl">
+                        <span>En mode</span>
+                        <span dir="rtl">مستيليا</span>
+                    </h1>
+
+                    <!-- BRANDING -->
+                    <span
+                        class="absolute right-0 -bottom-8 text-sm uppercase tracking-normal font-clash text-[#B22222] font-semibold">
+                        Photography
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- GO BACK (bottom-left of section) -->
+        <a href="#"
+            class="absolute left-6 bottom-6 inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gray-400 hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-sm">north_west</span>
+            Go Back
+        </a>
+    </section>
+
+    <section class="py-24 md:py-12 bg-background-light dark:bg-background-dark">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p
+                class="font-general font-medium  md:text-xl text-black dark:text-black leading-relaxed text-left max-w-2xl mx-auto">
+                "En Mode مستيليا" merges modernity and tradition through fashion. By combining denim, a symbol of casual
+                wear, with the luxurious fabrics of the caftan, the collection bridges past and present. The vibrant red
+                embodies passion, boldness, and elegance, capturing the essence of this unique fusion</p>
+        </div>
+    </section>
+
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 pb-16 md:pb-24">
+        <div class="grid grid-cols-1 mt-8 md:grid-cols-2 gap-x-8 lg:gap-x-16">
+            <div class="flex flex-col gap-8 lg:gap-12">
+                <div class="w-full">
+                    <img src="./assets/style_1.png" alt="Texture view 1" class="max-w-full h-auto object-cover" />
+                </div>
+
+                <div class="w-full">
+                    <img src="./assets/style_2.png" alt="Texture view 3" class="max-w-full h-auto object-cover" />
+                </div>
+                <div class="w-full ">
+                    <img src="./assets/style_3.png" class="w-full h-auto object-cover" />
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-8 lg:gap-12 ">
+                <div class="w-full">
+                    <img src="./assets/style_4.png" alt="Texture view 2" class="max-w-full h-auto  object-cover" />
+                </div>
+
+                <div class="w-full">
+                    <img src="./assets/style_5.png" alt="Texture view 4" class="max-w-full h-auto object-cover" />
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <footer class="py-24 bg-background-light dark:bg-background-dark border-t border-gray-100 dark:border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <a class="inline-flex flex-col items-center group" href="#">
+                <span
+                    class="material-symbols-outlined text-4xl mb-4 group-hover:-translate-y-2 transition-transform">north</span>
+                <span
+                    class="text-4xl md:text-5xl font-black uppercase tracking-tighter border-b-8 border-black dark:border-white leading-none">
+                    GO TO THE TOP
+                </span>
+            </a>
+            <div
+                class="mt-24 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-widest font-bold opacity-40">
+                <p>© 2024 SARA EL AAM. ALL RIGHTS RESERVED.</p>
+                <div class="flex gap-8">
+                    <a class="hover:opacity-100" href="#">INSTAGRAM</a>
+                    <a class="hover:opacity-100" href="#">BEHANCE</a>
+                    <a class="hover:opacity-100" href="#">LINKEDIN</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

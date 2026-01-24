@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GoBack from '../components/GoBack.jsx';
+---
+
+<BaseLayout title="Casa Orla Branding - Sara El Aam">
+  <!-- Hero Section -->
+  <section class="relative bg-black pt-24 pb-36 sm:pt-32 shadow-lg text-white overflow-hidden">
+    <div class="flex justify-center items-center px-6">
+      <div class="relative text-left">
+        <h1 class="font-clash font-medium uppercase leading-[0.9] tracking-widest text-5xl md:text-[8rem] animate-on-scroll">
+          CASA ORLA
+        </h1>
+        <span class="absolute right-2 md:right-4 -bottom-12 text-sm uppercase tracking-[0.3em] font-clash text-primary-dark font-bold animate-on-scroll" style="animation-delay: 0.1s;">
+          Branding
+        </span>
+      </div>
+    </div>
+    
+    <!-- Go Back Button -->
+    <div class="absolute left-6 bottom-6">
+      <GoBack client:load />
+    </div>
+  </section>
+
+  <!-- Logo Section -->
+  <section class="py-20 bg-background-light dark:bg-background-dark">
+    <div class="flex flex-col justify-center items-center">
+      <img 
+        src="/assets/casaorla.svg" 
+        alt="Casa Orla logo"
+        class="animate-on-scroll max-w-md w-full px-6"
+        loading="lazy"
+      />
+      <img 
+        src="/assets/b&sc.svg" 
+        alt="Casa Orla brand system"
+        class="my-4 animate-on-scroll max-w-2xl w-full px-6" 
+        style="animation-delay: 0.1s;"
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <!-- Color Variations Grid -->
+  <section class="px-6 pb-24">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-0">
+      <div class="aspect-square relative group overflow-hidden bg-emerald-950 animate-on-scroll">
+        <img 
+          src="/assets/casaorla_green.svg"
+          alt="Casa Orla green variation"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          loading="lazy"
+        />
+      </div>
+      <div class="aspect-square relative group overflow-hidden bg-sky-100 animate-on-scroll" style="animation-delay: 0.1s;">
+        <img 
+          src="/assets/casaorla_blue.svg"
+          alt="Casa Orla blue variation"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          loading="lazy"
+        />
+      </div>
+      <div class="aspect-square relative group overflow-hidden bg-amber-800 animate-on-scroll" style="animation-delay: 0.2s;">
+        <img 
+          src="/assets/casaorla_lightbrown.svg"
+          alt="Casa Orla brown variation"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Mockups Grid -->
+  <section class="px-6 py-24 bg-gray-50 dark:bg-zinc-900">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="space-y-8">
+        <div class="aspect-[4/5] bg-gray-200 dark:bg-gray-800 animate-on-scroll overflow-hidden">
+          <img 
+            src="/assets/olivier.png"
+            alt="Warm interior with olive tree"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+            loading="lazy"
+          />
+        </div>
+        <div class="aspect-[4/5] bg-gray-200 dark:bg-gray-800 animate-on-scroll overflow-hidden" style="animation-delay: 0.2s;">
+          <img 
+            src="/assets/mockup 1.png"
+            alt="Casa Orla branded window fabric"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="space-y-8">
+        <div class="aspect-[4/5] bg-gray-200 dark:bg-gray-800 animate-on-scroll overflow-hidden" style="animation-delay: 0.1s;">
+          <img 
+            src="/assets/paper-cups.png"
+            alt="Branded coffee cups"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+            loading="lazy"
+          />
+        </div>
+        <div class="aspect-[4/5] bg-gray-200 dark:bg-gray-800 animate-on-scroll overflow-hidden" style="animation-delay: 0.3s;">
+          <img 
+            src="/assets/menu.png"
+            alt="Minimalist interior with menu board"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Images Grid -->
+  <section class="px-6 py-24">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="relative group animate-on-scroll overflow-hidden">
+        <img 
+          src="/assets/coffee_closeup.png"
+          alt="Close up of iced coffee"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+          loading="lazy"
+        />
+      </div>
+      <div class="relative group animate-on-scroll overflow-hidden" style="animation-delay: 0.1s;">
+        <img 
+          src="/assets/wood.svg"
+          alt="Wood texture"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+          loading="lazy"
+        />
+      </div>
+      <div class="relative group animate-on-scroll overflow-hidden" style="animation-delay: 0.2s;">
+        <img 
+          src="/assets/croissant.png"
+          alt="Golden croissants"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

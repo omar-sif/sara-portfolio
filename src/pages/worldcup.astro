@@ -1,0 +1,195 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GoBack from '../components/GoBack.jsx';
+---
+
+<BaseLayout title="World Cup 2030 Branding - Sara El Aam">
+  <!-- Hero Section -->
+  <section class="relative bg-black pt-24 pb-20 sm:pt-32 shadow-lg text-white overflow-hidden">
+    <div class="flex justify-center items-center px-6">
+      <div class="relative text-left">
+        <h1 class="font-clash font-medium uppercase leading-[0.9] tracking-tighter text-5xl md:text-[8rem] animate-on-scroll">
+          World Cup<br />2030
+        </h1>
+        <span class="absolute right-2 md:right-4 bottom-4 text-sm uppercase tracking-[0.3em] font-clash text-primary font-bold animate-on-scroll" style="animation-delay: 0.1s;">
+          Branding
+        </span>
+      </div>
+    </div>
+    
+    <!-- Go Back Button -->
+    <div class="absolute left-6 bottom-6">
+      <GoBack client:load />
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-6 bg-background-light dark:bg-background-dark">
+    <div class="grid grid-cols-1 md:grid-cols-8 gap-4 md:gap-6">
+      
+      <!-- Quote Section -->
+      <div class="col-span-1 md:col-start-3 md:col-span-4 py-12 md:py-6">
+        <h2 id="fit-text" class="font-bold tracking-tight whitespace-nowrap text-2xl md:text-4xl animate-on-scroll">
+          <q>Three Lands, One Celebration</q>
+        </h2>
+        <p class="font-general font-medium text-base md:text-xl text-black dark:text-black leading-relaxed mt-4 animate-on-scroll" style="animation-delay: 0.1s;">
+          A visual identity built on uniting Morocco, Spain, and Portugal through balanced colors and forms that reflect their shared passion for football and equal cultural representation.
+        </p>
+      </div>
+
+      <!-- Trophy Section -->
+      <div class="col-span-1 md:col-start-3 md:col-span-4 py-6">
+        <div class="aspect-[16/10] flex items-center justify-center relative animate-on-scroll">
+          <img 
+            src="/assets/trophee.svg"
+            alt="FIFA World Cup 2030 Logo Construction Grid"
+            class="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal dark:invert"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- WC Logo -->
+      <div class="col-span-1 md:col-span-8 py-12">
+        <div class="flex items-center justify-center animate-on-scroll">
+          <img 
+            src="/assets/wc.svg" 
+            alt="World Cup 2030 Logo"
+            class="max-w-full"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- Color Palette -->
+      <div class="col-span-1 md:col-start-3 md:col-span-4 py-12">
+        <div class="flex justify-between text-base text-black font-clash font-semibold tracking-widest animate-on-scroll">
+          <span>color palette</span>
+          <span>HEX</span>
+        </div>
+        <div class="flex flex-col animate-on-scroll" style="animation-delay: 0.1s;">
+          <div class="h-24 flex items-end justify-end px-1 bg-wc-offwhite text-zinc-500">
+            <span class="text-sm font-clash font-regular">F6F6F4</span>
+          </div>
+          <div class="h-24 flex items-end justify-end px-1 bg-wc-yellow text-wc-teal/50">
+            <span class="text-sm font-clash font-regular">F7E934</span>
+          </div>
+          <div class="h-24 flex items-end justify-end px-1 bg-primary text-white/50">
+            <span class="text-sm font-clash font-regular">E4201F</span>
+          </div>
+          <div class="h-24 flex items-end justify-end px-1 bg-wc-teal text-wc-yellow/50">
+            <span class="text-sm font-clash font-regular">073B44</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Graphic System Label -->
+      <div class="col-span-1 md:col-start-3 md:col-span-6 pt-12 pb-1">
+        <div class="text-base tracking-widest font-clash text-black font-semibold animate-on-scroll">
+          the graphic system
+        </div>
+      </div>
+
+      <!-- Graphic System Images -->
+      <div class="col-span-1 md:col-span-8 pb-12 overflow-hidden">
+        <div class="space-y-0 shadow-2xl">
+          <div class="relative h-[300px] overflow-hidden group animate-on-scroll">
+            <img 
+              src="/assets/attack.svg"
+              alt="Attack Graphic Pattern"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+          <div class="relative h-[300px] overflow-hidden group animate-on-scroll" style="animation-delay: 0.1s;">
+            <img 
+              src="/assets/stable.svg"
+              alt="Stable Graphic Pattern"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+          <div class="relative h-[300px] overflow-hidden group animate-on-scroll" style="animation-delay: 0.2s;">
+            <img 
+              src="/assets/enmvt.svg"
+              alt="En Mouvement Graphic Pattern"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Graphic System Description -->
+      <div class="col-span-1 md:col-start-3 md:col-span-4 py-6">
+        <p class="font-general font-medium text-base md:text-xl text-black dark:text-black leading-relaxed text-left animate-on-scroll">
+          The graphic system translates players' movements on the pitch into three visual forms: Stable, Move, and Attack. These abstract shapes capture the rhythm, strategy, and energy of the game while creating a cohesive visual language for the 2030 World Cup.
+        </p>
+      </div>
+
+      <!-- Banners -->
+      <div class="col-span-1 md:col-start-3 md:col-span-4 py-12 space-y-0">
+        <div class="w-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden animate-on-scroll">
+          <img 
+            src="/assets/banner1.svg" 
+            alt="World Cup 2030 Bus Stop Ad Mockup" 
+            class="w-full h-auto hover:scale-[1.02] transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
+        <div class="w-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden animate-on-scroll" style="animation-delay: 0.1s;">
+          <img 
+            src="/assets/banner2.svg" 
+            alt="World Cup 2030 Street Banner Mockup" 
+            class="w-full h-auto hover:scale-[1.02] transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
+        <div class="w-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden animate-on-scroll" style="animation-delay: 0.2s;">
+          <img 
+            src="/assets/banner3.svg" 
+            alt="World Cup 2030 Billboard Mockup" 
+            class="w-full h-auto hover:scale-[1.02] transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  // FitText: Scales text to exactly fit container width
+  function fitText(element) {
+    if (!element) return;
+    const container = element.parentElement;
+    if (!container) return;
+    const containerWidth = container.clientWidth;
+
+    let fontSize = 10;
+    element.style.fontSize = fontSize + 'px';
+
+    let low = 10;
+    let high = 200;
+
+    while (high - low > 0.5) {
+      fontSize = (low + high) / 2;
+      element.style.fontSize = fontSize + 'px';
+
+      if (element.scrollWidth > containerWidth) {
+        high = fontSize;
+      } else {
+        low = fontSize;
+      }
+    }
+
+    element.style.fontSize = (low - 1) + 'px';
+  }
+
+  const fitTextElement = document.getElementById('fit-text');
+  if (fitTextElement) {
+    fitText(fitTextElement);
+    window.addEventListener('resize', () => fitText(fitTextElement));
+  }
+</script>

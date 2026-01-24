@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Contact - Sara El Aam">
+  <!-- Hero Section -->
+  <section class="relative bg-black pt-24 pb-20 sm:pt-32 shadow-lg text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-32 2xl:px-72">
+      <div class="flex justify-center items-center">
+        <h1 class="font-clash font-medium uppercase leading-[0.9] tracking-normal text-4xl sm:text-7xl md:text-7xl 2xl:text-9xl animate-on-scroll">
+          Contact
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info Section -->
+  <section class="py-12 md:py-24 bg-background-light dark:bg-background-dark">
+    <div class="max-w-7xl mx-auto px-6 text-center flex flex-col justify-center items-center">
+      <p class="font-general font-normal uppercase text-base md:text-xl text-primary dark:text-black leading-relaxed text-left max-w-5xl mx-auto animate-on-scroll">
+        for more projects . Collaboration . Feedback
+      </p>
+      
+      <img 
+        src="/assets/contact_bar.svg" 
+        alt="Contact decoration" 
+        class="p-4 md:p-12 animate-on-scroll" 
+        style="animation-delay: 0.1s;"
+        loading="lazy"
+      />
+      
+      <div class="space-y-4 animate-on-scroll" style="animation-delay: 0.2s;">
+        <a 
+          href="https://www.instagram.com/madeby.sara004" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-general font-medium text-lg md:text-xl block hover:text-primary transition-colors"
+        >
+          @madeby.sara004
+        </a>
+        <a 
+          href="mailto:elaam.sara@gmail.com" 
+          class="font-general font-medium text-lg md:text-xl block hover:text-primary transition-colors"
+        >
+          elaam.sara@gmail.com
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

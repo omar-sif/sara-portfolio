@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page Not Found - Sara El Aam">
+  <section class="min-h-[calc(100vh-64px)] bg-black flex flex-col items-center justify-center px-6">
+    <div class="text-center">
+      <h1 class="font-clash font-light text-primary-dark text-[20vw] md:text-[15vw] leading-none animate-on-scroll">
+        404
+      </h1>
+      <p class="text-white font-general text-lg md:text-2xl mt-6 animate-on-scroll" style="animation-delay: 0.1s;">
+        Oops! This page doesn't exist.
+      </p>
+      <a 
+        href="/" 
+        class="inline-block mt-8 px-8 py-4 bg-primary-dark text-white font-clash font-medium uppercase tracking-wider hover:bg-primary transition-colors animate-on-scroll"
+        style="animation-delay: 0.2s;"
+      >
+        Back to Home
+      </a>
+    </div>
+  </section>
+</BaseLayout>

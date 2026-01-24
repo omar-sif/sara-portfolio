@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GoBack from '../components/GoBack.jsx';
+---
+
+<BaseLayout title="Photography - Sara El Aam">
+  <!-- Hero Section -->
+  <section class="relative bg-black pt-24 pb-20 sm:pt-32 shadow-lg text-primary-mid overflow-hidden">
+    <div class="flex justify-center items-center px-6">
+      <div class="relative text-left">
+        <h1 class="font-clash font-medium leading-[0.9] tracking-normal text-4xl md:text-[8rem] animate-on-scroll">
+          Photography
+        </h1>
+      </div>
+    </div>
+    
+    <!-- Go Back Button -->
+    <div class="absolute left-6 bottom-6">
+      <GoBack client:load />
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="py-20 bg-background-light dark:bg-background-dark">
+    <div class="max-w-7xl mx-auto px-6 space-y-24 flex flex-col justify-center items-center text-right font-general font-normal">
+      
+      <!-- Close up textures -->
+      <a href="/textures" class="flex justify-center group animate-on-scroll">
+        <div class="max-w-7xl">
+          <div class="overflow-hidden">
+            <img 
+              src="/assets/closeup_link.png" 
+              alt="Close up textures project"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+          <p class="mt-4 text-lg group-hover:text-primary transition-colors">Close up textures</p>
+        </div>
+      </a>
+
+      <!-- Balenciaga -->
+      <a href="/balenciaga" class="flex justify-center group animate-on-scroll" style="animation-delay: 0.1s;">
+        <div class="max-w-7xl">
+          <div class="overflow-hidden">
+            <img 
+              src="/assets/balenciaga_link.png" 
+              alt="Balenciaga Fresh Stock project"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+          <p class="mt-4 text-lg group-hover:text-primary transition-colors">Balenciaga / FRESH STOCK</p>
+        </div>
+      </a>
+
+      <!-- En Mode -->
+      <a href="/style" class="flex justify-center group animate-on-scroll" style="animation-delay: 0.2s;">
+        <div class="max-w-7xl">
+          <div class="overflow-hidden">
+            <img 
+              src="/assets/enmode_link.png" 
+              alt="En Mode project"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+          <p class="mt-4 text-lg group-hover:text-primary transition-colors">En Mode مستيليا</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+</BaseLayout>

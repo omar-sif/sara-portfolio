@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GoBack from '../components/GoBack.jsx';
+---
+
+<BaseLayout title="Branding - Sara El Aam">
+  <!-- Hero Section -->
+  <section class="relative bg-black pt-24 pb-20 sm:pt-32 shadow-lg text-primary-mid overflow-hidden">
+    <div class="flex justify-center items-center px-6">
+      <div class="relative text-left">
+        <h1 class="font-clash font-medium leading-[0.9] tracking-widest text-5xl md:text-[8rem] animate-on-scroll">
+          Branding
+        </h1>
+      </div>
+    </div>
+    
+    <!-- Go Back Button -->
+    <div class="absolute left-6 bottom-6">
+      <GoBack client:load />
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="py-20 bg-background-light dark:bg-background-dark">
+    <div class="max-w-7xl mx-auto px-6 space-y-24">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 font-general">
+        
+        <!-- Casa Orla -->
+        <a href="/casaorla" class="flex justify-center group animate-on-scroll">
+          <div class="aspect-[233/220] w-full max-w-[300px]">
+            <div class="overflow-hidden">
+              <img 
+                src="/assets/casaorla_green.svg" 
+                alt="Casa Orla branding project"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+            <p class="mt-4 text-center group-hover:text-primary transition-colors">CASA ORLA</p>
+          </div>
+        </a>
+
+        <!-- 2030 World Cup -->
+        <a href="/worldcup" class="flex justify-center group animate-on-scroll" style="animation-delay: 0.1s;">
+          <div class="aspect-[233/220] w-full max-w-[300px]">
+            <div class="overflow-hidden">
+              <img 
+                src="/assets/enmvt_link.png" 
+                alt="2030 World Cup branding project"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+            <p class="mt-4 text-center group-hover:text-primary transition-colors">2030 World Cup</p>
+          </div>
+        </a>
+
+        <!-- PIATO -->
+        <a href="/piato" class="flex justify-center group animate-on-scroll" style="animation-delay: 0.2s;">
+          <div class="aspect-[233/220] w-full max-w-[300px]">
+            <div class="overflow-hidden">
+              <img 
+                src="/assets/piato_menu.png" 
+                alt="PIATO Restaurant branding"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+            <p class="mt-4 text-center group-hover:text-primary transition-colors">PIATO - Restaurant</p>
+          </div>
+        </a>
+
+        <!-- Book Festival -->
+        <a href="/book-fest" class="flex justify-center group animate-on-scroll" style="animation-delay: 0.3s;">
+          <div class="aspect-[233/220] w-full max-w-[300px] sm:translate-x-1/4 lg:translate-x-1/2">
+            <div class="overflow-hidden">
+              <img 
+                src="/assets/book_festival.png" 
+                alt="Book Festival branding project"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+            <p class="mt-4 text-center group-hover:text-primary transition-colors">Book Festival</p>
+          </div>
+        </a>
+
+        <!-- Chocolate -->
+        <a href="/chocolate" class="flex justify-center group animate-on-scroll" style="animation-delay: 0.4s;">
+          <div class="aspect-[233/220] w-full max-w-[300px] sm:translate-x-1/4 lg:translate-x-1/2">
+            <div class="overflow-hidden">
+              <img 
+                src="/assets/sweet siblings PNG.png" 
+                alt="Chocolate branding project"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+            <p class="mt-4 text-center group-hover:text-primary transition-colors">Chocolate</p>
+          </div>
+        </a>
+
+        <!-- Book Store -->
+        <a href="/book-store" class="flex justify-center group animate-on-scroll" style="animation-delay: 0.5s;">
+          <div class="aspect-[233/220] w-full max-w-[300px] sm:translate-x-1/4 lg:translate-x-1/2">
+            <div class="overflow-hidden">
+              <img 
+                src="/assets/tbk web.png" 
+                alt="Book Store branding project"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+            <p class="mt-4 text-center group-hover:text-primary transition-colors">Book Store</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>

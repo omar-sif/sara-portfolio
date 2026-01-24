@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GoBack from '../components/GoBack.jsx';
+---
+
+<BaseLayout title="Close Up Textures - Sara El Aam">
+  <!-- Hero Section -->
+  <section class="relative bg-black pt-24 pb-20 sm:pt-32 shadow-lg text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-baseline animate-on-scroll">
+        <h1 class="font-clash font-medium uppercase leading-[0.9] tracking-normal text-5xl md:text-9xl">
+          CLOSE
+        </h1>
+        <h1 class="font-clash font-medium uppercase leading-[0.9] tracking-normal text-5xl md:text-9xl">
+          UP
+        </h1>
+      </div>
+      <div class="flex justify-between items-baseline animate-on-scroll" style="animation-delay: 0.1s;">
+        <h1 class="font-clash font-medium uppercase leading-[0.9] tracking-normal text-5xl md:text-9xl">
+          TEXTURES
+        </h1>
+        <span class="text-sm sm:text-base md:text-lg uppercase tracking-normal font-clash text-primary-dark font-semibold">
+          Photography
+        </span>
+      </div>
+    </div>
+    
+    <!-- Go Back Button -->
+    <div class="absolute left-6 bottom-6">
+      <GoBack client:load />
+    </div>
+  </section>
+
+  <!-- Description Section -->
+  <section class="py-12 md:py-24 bg-background-light dark:bg-background-dark">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="font-general font-medium text-base md:text-xl text-black dark:text-black leading-relaxed text-left max-w-2xl mx-auto animate-on-scroll">
+        A series of close-up photographs capturing raw textures in an abandoned space, turning decay and overlooked details into visual inspiration.
+      </p>
+    </div>
+  </section>
+
+  <!-- Images Grid -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 pb-16 md:pb-24">
+    <div class="grid grid-cols-1 mt-8 md:grid-cols-2 gap-x-8 lg:gap-x-16">
+      <div class="flex flex-col gap-8 lg:gap-12">
+        <div class="w-full animate-on-scroll">
+          <img 
+            src="/assets/texture1.png" 
+            alt="Texture view 1"
+            class="max-w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
+        <div class="w-full animate-on-scroll" style="animation-delay: 0.2s;">
+          <img 
+            src="/assets/texture2.png" 
+            alt="Texture view 2"
+            class="max-w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-8 lg:gap-12">
+        <div class="w-full animate-on-scroll" style="animation-delay: 0.1s;">
+          <img 
+            src="/assets/texture3.png" 
+            alt="Texture view 3"
+            class="max-w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
+        <div class="w-full animate-on-scroll" style="animation-delay: 0.3s;">
+          <img 
+            src="/assets/texture4.png" 
+            alt="Texture view 4"
+            class="max-w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- Centered last image -->
+      <div class="md:col-span-2 flex justify-center mt-12 animate-on-scroll" style="animation-delay: 0.4s;">
+        <div class="w-full max-w-[640px]">
+          <img 
+            src="/assets/texture5.png" 
+            alt="Texture view 5"
+            class="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

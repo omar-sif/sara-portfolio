@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GoBack from '../components/GoBack.jsx';
+---
+
+<BaseLayout title="Restaurant PIATO - Sara El Aam">
+  <!-- Hero Section -->
+  <section class="relative bg-black pt-24 pb-20 sm:pt-32 shadow-lg text-white overflow-hidden">
+    <div class="flex justify-center items-center px-6">
+      <div class="relative text-left">
+        <h1 class="font-clash font-medium uppercase leading-[0.9] tracking-wide text-5xl md:text-[8rem] text-left animate-on-scroll">
+          <span class="block">Restaurant</span>
+          <span class="block">PIATO</span>
+        </h1>
+        <span class="absolute right-2 md:right-4 bottom-4 text-sm uppercase tracking-normal font-clash text-primary-dark font-semibold animate-on-scroll" style="animation-delay: 0.1s;">
+          Branding
+        </span>
+      </div>
+    </div>
+    
+    <!-- Go Back Button -->
+    <div class="absolute left-6 bottom-6">
+      <GoBack client:load />
+    </div>
+  </section>
+
+  <!-- Project Image -->
+  <section class="py-12 bg-background-light dark:bg-background-dark flex justify-center px-6">
+    <img 
+      src="/assets/piato_page.png" 
+      alt="PIATO Restaurant branding project"
+      class="max-w-7xl w-full animate-on-scroll hover:scale-[1.01] transition-transform duration-500"
+      loading="lazy"
+    />
+  </section>
+</BaseLayout>

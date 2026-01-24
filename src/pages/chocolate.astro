@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GoBack from '../components/GoBack.jsx';
+---
+
+<BaseLayout title="Chocolate Branding - Sara El Aam">
+  <!-- Hero Section -->
+  <section class="relative bg-black pt-24 pb-20 sm:pt-32 shadow-lg text-white overflow-hidden">
+    <div class="flex justify-center items-center px-6">
+      <div class="relative text-left">
+        <h1 class="font-clash font-medium uppercase leading-[0.9] tracking-normal text-5xl md:text-7xl animate-on-scroll">
+          CHOCOLATE
+        </h1>
+        <span class="absolute right-0 -bottom-8 text-sm uppercase tracking-normal font-clash text-primary-dark font-semibold animate-on-scroll" style="animation-delay: 0.1s;">
+          Branding
+        </span>
+      </div>
+    </div>
+    
+    <!-- Go Back Button -->
+    <div class="absolute left-6 bottom-6">
+      <GoBack client:load />
+    </div>
+  </section>
+
+  <!-- Project Image -->
+  <section class="py-12 bg-background-light dark:bg-background-dark flex justify-center px-6">
+    <img 
+      src="/assets/chocolate_page.png" 
+      alt="Chocolate branding project"
+      class="block max-w-7xl md:max-w-4xl w-full animate-on-scroll hover:scale-[1.01] transition-transform duration-500"
+      loading="lazy"
+    />
+  </section>
+</BaseLayout>
